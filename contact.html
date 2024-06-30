@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="" href="stylsheet1.css">
+  <title>Contact us</title>
+</head>
+<script>
+  function activeHome() {
+      document.getElementById("home").classList.add("active");
+      document.getElementById("first").classList.remove("active");
+    }
+    function activecontact() {
+      document.getElementById("home").classList.remove("active");
+      document.getElementById("contact").classList.add("active");
+    }
+</script>
+<body>
+  <nav class="navigationBar" style="z-index: 99;">
+    <img class="logo" src="Untitled.png">
+    <a id="home" href="index.html" onClick="activeHome()"> AdityaSharma</a>
+    <a id="contact" class="contact active" href="#contctus" onclick="activecontact()">Contact us</a>
+  </nav>
+  <div style="background-color: #00000091;height: 100vh;padding:77px 20px;color: white;position: fixed;">
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus similique quia nam vero deserunt suscipit at, ut
+      ipsum maxime expedita? Animi ab atque doloribus nihil aspernatur molestiae dicta quis ad?
+      Quod dolore unde quam amet quos! Tenetur reprehenderit atque nam praesentium, architecto cum repellat sapiente
+      quod dolores temporibus vitae et fuga ab velit ex ipsum ipsa, iusto inventore consequatur. Consequatur.
+      Doloribus vitae corporis pariatur explicabo sit magni obcaecati tempora alias natus illum numquam non, inventore
+      distinctio repellendus id dolor, consectetur quae harum! Amet sunt fugiat, sit dolore voluptate laudantium natus!
+      Voluptate minus sapiente rem veritatis est, fugit vel enim architecto blanditiis ea doloremque velit accusantium,
+      consequuntur sint perferendis nisi. Minima placeat laudantium, asperiores veritatis quidem praesentium amet
+      eveniet ipsa voluptatem?
+      Numquam reprehenderit porro eius? Sed commodi dignissimos vel eveniet dolorum quidem neque quis tenetur ipsa optio
+      voluptatibus, accusamus fuga qui aliquam itaque nostrum in ex, consectetur, voluptatem culpa corrupti ea!
+      Quibusdam quaerat odit, labore qui cupiditate vero corrupti delectus. Perspiciatis velit optio facilis non
+      reiciendis nam odio amet voluptate hic voluptatem porro, est veniam iusto sint modi voluptates quaerat eos.
+      Fugiat reprehenderit iure fugit recusandae, dolorum vitae commodi ut beatae ipsa sint nam expedita cumque hic
+      similique neque possimus laborum soluta eveniet, dolores, cupiditate necessitatibus minus? Ullam repudiandae in
+      quam?
+      Numquam ex debitis sequi maiores neque adipisci accusamus repellendus? Vitae tenetur fugit excepturi harum
+      quisquam aliquid maiores mollitia labore. Nulla ipsa doloremque quae accusamus impedit ipsam ex quam tempora
+      officiis?
+      Aut quos aliquid ea facilis? Molestias iste reprehenderit suscipit illo vel atque voluptatum nobis odit assumenda
+      quos harum, et quam necessitatibus ad! Consectetur, dignissimos ea vitae delectus est blanditiis magni.
+      Expedita sapiente quam, doloribus possimus atque maxime culpa. Fugiat vero sapiente provident, ipsum cupiditate ut
+      tempore, totam voluptatum ab qui beatae quibusdam maiores sequi numquam. Modi officiis dolor eligendi quae.
+    </p>
+    <br>
+    <br>
+    <hr>
+    <p style="text-transform: uppercase;text-align: center;font-size: 25px;padding: 10px;">
+      form
+    </p>
+    <hr>
+    <form>
+      <div style="padding: 10px; border:solid black 1px;">
+        <label for="name">
+          Name:
+        </label>
+        <input type="text" id="name" placeholder="Eg-john dolor"><br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email"><br>
+        <label for="genre">Favorite genre</label>
+        <input list="genre">
+        <datalist id="genre">
+          <option value="Attack">
+          <option value="Defence">
+          <option value="Bounty">
+        </datalist>
+      </div>
+      <div style="display: flex; align-items: center;padding: 10px;">
+        <input type="checkbox">
+        <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+
+      </div>
+      <input type="submit" name="submit" id="submit" value="submit">
+    </form>
+    <div style="background-color: #00000098; height: 21vh; border-radius: 20px; text-align: center;align-content: center;">
+      <p>
+        All Rights are Reserved to Aditya Sharma<br>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
