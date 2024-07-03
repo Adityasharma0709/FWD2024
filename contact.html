@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
-    <link rel="stylesheet" type="" href="/Assgn1/css/stylsheet1.css" />
+    <link rel="script" href="/Assgn1/js/script1.js" />
+    <link rel="stylesheet" href="/Assgn1/css/stylsheet1.css" />
     <title>Contact us</title>
   </head>
-  <script>
+  <!-- <script>
     function activeHome() {
       document.getElementById("home").classList.add("active");
       document.getElementById("first").classList.remove("active");
@@ -16,12 +17,17 @@
       document.getElementById("home").classList.remove("active");
       document.getElementById("contact").classList.add("active");
     }
-  </script>
+  </script> -->
   <body>
     <nav class="navigationBar">
       <div class="ho">
-        <img class="logo" src="Untitled.png" />
-        <a class="active" id="home" href="/Assgn1/html/index.html" onClick="activeHome()">
+        <img class="logo" src="/Assgn1/Untitled.png" alt="logo"/>
+        <a
+          class="active"
+          id="home"
+          href="/Assgn1/html/index.html"
+          onClick="activeHome()"
+        >
           AdityaSharma</a
         >
       </div>
@@ -90,13 +96,15 @@
           <label for="name"> Name: </label>
           <input type="text" id="name" placeholder="Eg-john dolor" /><br />
           <label for="email">E-mail:</label>
-          <input type="email" name="email" id="email" /><br />
+          <input type="email" name="email" id="email" placeholder="Eg-xyz@gmail.com"/><br />
           <label for="genre">Favorite genre</label>
           <input list="genre" />
           <datalist id="genre">
             <option value="Attack"></option>
             <option value="Defence"></option>
             <option value="Bounty"></option>
+            <option value="deathmatch"></option>
+            <option value="team deathmatch"></option>
           </datalist>
         </div>
         <div style="display: flex; align-items: center; padding: 10px">
@@ -105,7 +113,7 @@
         </div>
         <input type="submit" name="submit" id="submit" value="submit" />
       </form>
-      <div class= "footer">
+      <div class="footer">
         <p>All Rights are Reserved to Aditya Sharma</p>
       </div>
     </div>
